@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Sarah Colls | Oklahoma Realtor | Featured Listings {% endblock %}
+{% load static %}
+{% block content %}
+
+
+<img class="webHeader" src="{% static '/img/SCFeaturedListingsHeader.svg' %}" alt="Sarah Colls Oklahoma Realtor Listing Header">
+<ul class="ulListings">
+    {% for listing in object_list %}
+    <li class=listings>
+        <div class="home_facts">
+            <img class="listing_photo" src="{{ listing.home_photo.url }}" width="650" alt="Oklahoma Area Real Estate Listing">
+        </div>
+        <div class="home_facts">
+            <div class="home_text">
+                <h2>{{listing.address}}</h2>
+                <h3>{{listing.sqft}} sqft | {{listing.bedrooms}} bedrooms | {{listing.bathrooms}} bathrooms </h3><br />
+                <h4>{{listing.description}}</h4>
+                <h2>{{listing.price}}</h2>
+                {% if user.is_authenticated %}
+                <div class="admin_options">
+                    <a href="{% url 'update_listing' listing.pk %}"><small>(Edit)</small></a>
+                    <a href="{% url 'delete_listing' listing.pk %}"><small>(Delete)</small></a><br />
+                </div>
+
+                {% endif %}
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

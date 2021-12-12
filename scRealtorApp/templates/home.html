@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<img class="homeInterior" src="{% static '/img/SCPhotoBanner.svg' %}" alt="Sarah Colls Oklahoma Realtor - Home Interiors">
+
+<img class="webHeader" src="{% static '/img/SCUnderWebHeader.svg' %}" alt="Sarah Colls Oklahoma Real Estate Agent Web Header">
+
+<div class="about">
+    <div class="aboutMeBlurb">
+        <img class="textHeader" width="400" src="{% static '/img/thanks.svg' %}" alt="Sarah Colls Oklahoma Realtor - Thanks Banner">
+        <div class="text_container">
+            <p>Oklahoma Realtor®, Sarah Colls, services the greater metro area of Oklahoma City, from El Reno to Midwest City and Edmond down to Norman. </p><br>
+            <p>As a Colorado native, Sarah relocated to Oklahoma in 2011 with her husband. She immediately fell in love with
+                the area and knew she wanted to plant roots in Oklahoma. </p><br>
+            <p> Sarah has always had an entrepreneurial spirit. She ran several home businesses. As a young girl, Sarah
+                aspired to be a Realtor and knew that when the timing was right, she would pursue that career.</p><br>
+            <p> Sarah is now living her dream as a Realtor®. She loves connecting with her clients, and she is committed
+                to providing an exceptional experience to everyone she works with. She treats her clients like friends
+                and strives to create an experience that is fun and stress-free! With her strong communication skills
+                and professionalism, Sarah strives to make the process of finding and buying a home an easy and
+                enjoyable one!</p><br>
+        </div>
+    </div>
+    <div class="aboutMeBlurb">
+        <img class="headshots" src="{% static '/img/SCMeetSarah.svg' %}" width="450" height="675"
+            alt="Sarah Colls Oklahoma Realtor Professional Photo" />
+    </div>
+</div>
+
+
+
+<div class="homeInfo">
+    <div class="homeLinks">
+        <div class="homePhotos">
+            <img class="homelinkphoto" src="{% static '/img/homeExterior.png' %}" width="500" height="500"
+                alt="Oklahoma Realtor Exterior Home Image" />
+            <a href="{% url 'home_buying' %}"><button class="MoreInfo">Home Buying</button></a>
+        </div>
+    </div>
+
+    <div class="homeLinks">
+        <div class="homePhotos">
+            <img class="homelinkphoto" src="{% static '/img/kitchen2.png' %}" width="500" height="500"
+                alt="Oklahoma Real Estate Image of Modern Kitchen" />
+            <a href="{% url 'home_selling' %}"><button class="MoreInfo">Home Selling</button></a>
+        </div>
+    </div>
+
+    <div class="homeLinks">
+        <div class="homePhotos">
+            <img class="homelinkphoto" src="{% static '/img/bathroom2.png' %}" width="500" height="500"
+                alt="Oklahoma Realtor Image of Modern Bathroom" />
+            <a href="{% url 'contact' %}"><button class="MoreInfo">Contact Me</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="socials">
+        <a href="https://www.instagram.com/sarahcollsok/"><img class="socialicons"
+                src="{% static '/img/SCInstaIcon.png' %}" width="100" height="100" alt="Instagram Icon" /></a>
+        <a href="https://www.facebook.com/SarahCollsok"><img class="socialicons" src="{% static '/img/SCFBIcon.png' %}"
+                width="100" height="100" alt="Facebook Icon" /></a>
+    </div>
+    <div class="legals">
+        <h3>Oklahoma License# 201574</h3>
+        <img class="logo" src="{% static '/img/MLSEHO.png' %}" width="155.62" height="62.81"
+            alt="MLS and EHO Logo" /><br>
+            <a href="http://www.metrofirstrealtygroup.com/"><img class="logo" src="{% static '/img/MetroFirstBWLogo.png' %}" width="117.2" height="65.2"
+            alt="Oklahoma REal Estate Metro First Realty Logo" /></a>
+    </div>
+
+</div>
+    {% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Sarah Colls | Oklahoma Realtor | Testimonials{% endblock %}
+{% load static %}
+{% block content %}
+
+<img class="webHeader2" src="{% static '/img/SCTestimonialsWebHeader.svg' %}" alt="Sarah Colls Oklahoma Realtor Web Banner">
+
+<div class="page">
+    
+    <h1>My clients are important to me, here's what they have to say:</h1>
+    {% for each_testimonial in all_testimonials %}
+    <div class="each_testimonial">
+        <p>"{{each_testimonial.client_testimonial}}"</p>
+        <h2>{{each_testimonial.client_name}}</h2>
+        {% if user.is_authenticated %}
+        <form class='delete' action="/testimonials/{{each_testimonial.id}}/delete" method="POST">
+            {% csrf_token %}
+            <input class="btn btn-link" type="submit" value="delete">
+        </form>
+        {% endif %}
+    </div>
+        
+        {% endfor %}
+    
+</div>
+
+
+{% endblock %}

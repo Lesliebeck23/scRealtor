@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Sarah Colls | Oklahoma Realtor | Contact Page{% endblock %}
+{% load static %}
+{% block content %}
+
+<img class="webHeader" src="{% static '/img/SCContactWebHeader.svg' %}">
+
+<div class="page">
+    <div class="contact_page">
+        <div class="contact">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12793.564677330827!2d-97.56664826523821!3d35.3623096265886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a351b7dc8352170!2sMetro%20First%20Realty%20Group!5e0!3m2!1sen!2sus!4v1636729990023!5m2!1sen!2sus"
+                width="1204.26" height="500" style="border:2px solid #424347;" allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+        <div class="contact">
+            <div class="contact-info">
+                <h3>Address</h3>
+                <h3>1624 Greenbriar Pl #600, Oklahoma City,
+                    Oklahoma 73159</h3><br><br>
+
+                <h3>Phone</h3>
+                <h3>(405) 795-9357</h3><br><br>
+
+                <h3>Email</h3>
+                <h3>s.colls@yahoo.com</h3><br><br>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/sarahcollsok/"><img class="socialicons"
+                            src="{% static '/img/SCInstaIcon.png' %}" width="50" height="50" alt="Instagram Icon" /></a>
+                    <a href="https://www.facebook.com/SarahCollsok"><img class="socialicons"
+                            src="{% static '/img/SCFBIcon.png' %}" width="50" height="50" alt="Facebook Icon" /></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div id="fd-form-618ea5d93a0e5bcf6f541c60"></div>
+                <script>
+                    window.fd('form', {
+                        formId: '618ea5d93a0e5bcf6f541c60',
+                        containerEl: '#fd-form-618ea5d93a0e5bcf6f541c60'
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

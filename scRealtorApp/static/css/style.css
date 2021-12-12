@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&family=Montserrat:wght@200&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.wrapper {
+    width: 99%;
+    margin: auto;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 400;
+    text-align: center;
+    border: 10px solid #f5f5f5;
+}
+
+
+
+.header {
+    background-color: #f5f5f5;
+    max-width:100%;
+}
+
+.webHeader {
+    width: 100%;
+}
+
+.navLi {
+    width: 14%;
+    border-right: 2px solid #a7a7a7;
+}
+
+.navLi:last-of-type,
+.navLi:nth-child(3) {
+    border-right: none;
+}
+
+.nav_a_tag:link {
+    text-decoration: none;
+    color: #747474;
+}
+
+.nav_a_tag:visited {
+    color: #747474;
+}
+
+.nav_a_tag:hover {
+    text-decoration: underline;
+    color: #747474;
+}
+
+.nav_a_tag:active {
+    text-decoration: underline;
+}
+
+
+.navbar {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.25vw;
+    align-items: center;
+    color: #747474;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+img.homeInterior {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.aboutMeBlurb {
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+}
+
+.textHeader {
+    margin: auto;
+    max-width: 100%;
+}
+
+.headshots {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.homeInfo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url('../img/SCWavePattern.svg');
+    border: 2px solid #f5f5f5;
+    padding: 50px;
+}
+
+.homeLinks {
+    margin: 1%;
+}
+
+.homePhotos {
+    position: relative;
+}
+
+.homePhotos a button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #424347;
+    text-transform: uppercase;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100%;
+    padding: 2% 3%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+    font-size: larger;
+    padding: 2%;
+    font-family: 'Cormorant SC', serif;
+    text-align: center;
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.legals {
+    display: flex;
+    align-items: center;
+    font-family: 'Cormorant SC', serif;
+    flex-direction: column;
+}
+
+/*
+.sub-container {
+    padding-top: 30px;
+    width: 35%;
+    margin: auto;
+}
+*/
+
+form {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+
+
+}
+
+form label {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input {
+    margin: 10px 0 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #747474;
+    color: #3e3e40;
+    outline: none;
+    border-radius: 3px;
+}
+
+
+
+.webHeader2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: #efece7;
+}
+
+h2 {
+    font-size: 300%;
+    color: #424347;
+    text-transform: lowercase;    
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+}
+
+h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 200% ;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    text-align: center;
+}
+
+.ulListings {
+    border: 2px solid #f5f5f5;
+    background-image: url('../img/SCBrushPattern.svg');
+}
+
+
+.listings {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    min-height: 400px;
+    border-bottom: 2px solid #efece7;
+    justify-content: center;
+    padding: 20px;
+}
+
+.home_facts {
+    width: 684px;
+    margin: 1%;
+}
+
+.admin_options {
+    text-align: center;
+}
+
+.listing_photo {
+    width: 100%;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.manager_forms {
+    width: 100%;
+    display: flex;  
+    margin: auto;
+
+}
+
+iframe {
+    margin: 3% auto;
+}
+
+.contact {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    background-color: #424347;
+    color: #f5f5f5;
+    text-align: left;
+    padding: 4%;
+    font-size: .80vw;
+    max-width: 602.14px;
+}
+
+textarea {
+    min-height: 100px;
+    margin: 20px 0px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 40%;
+    padding: 1%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.btn.btn-link, .btn.btn-secondary {
+    font-family: 'Cormorant SC', serif;
+}
+
+.each_testimonial {
+    width: 75%;
+    border: 2px solid #c9b9a8;
+    background: #f5f5f5;
+    margin: 1% auto; 
+    padding: 2%;
+}
+
+
+.guide_space {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid #f5f5f5;
+    background-image: url('../img/SCWavePattern.svg');
+    padding: 2%;
+}
+
+.guide_element {
+    background: #efece7;
+}
+
+.guide_photo {
+    width: 100%;
+}
+
+.page  {
+    background-image: url('../img/SCBrushPattern.svg');
+    background-size: 100%;
+    border: 2px solid #c9b9a8;
+    padding: 2%;
+}

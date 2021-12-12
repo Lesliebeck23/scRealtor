@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Sarah Colls | Oklahoma Realtor | Home Buying Guide{% endblock %}
+{% load static %}
+{% block content %}
+
+<img class="webHeader" src="{% static '/img/SCHomeBuyingGuideWebHeader.svg' %}" alt="Sarah Colls Oklahoma Realtor Web Banner">
+
+
+<div class="guide_space">
+  <div class="guide_element">
+    <img class="guide_photo" width="600" height="600" src="{% static '/img/livingroom2.png' %}" alt="Oklahoma Realtor Interior Home Image">
+  </div>
+  <div class="guide_element">
+    <div id="fd-form-618eb8da839edddd7aa02296"></div>
+    <script>
+      window.fd('form', {
+        formId: '618eb8da839edddd7aa02296',
+        containerEl: '#fd-form-618eb8da839edddd7aa02296'
+      });
+    </script>
+
+  </div>
+
+</div>
+{% endblock %}
